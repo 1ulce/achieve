@@ -42,9 +42,10 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   
-  #### 1ulce add on dive 4 ###
+  #### 1ulce add  ###
   gem 'twitter-bootstrap-rails'
   gem 'jquery-turbolinks'
+  gem 'rails_12factor', group: :production
   #### 1ulce add end #########
 end
 
