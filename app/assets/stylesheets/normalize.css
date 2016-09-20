@@ -278,6 +278,7 @@ optgroup {
 button,
 input { /* 1 */
   overflow: visible;
+  margin-bottom: 15px;
 }
 
 /**
