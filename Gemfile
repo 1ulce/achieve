@@ -54,5 +54,6 @@ end
   end
   gem 'therubyracer', platforms: :ruby
   gem 'rails_admin'
+  gem 'cancan'
 #### 1ulce add end #########
 
