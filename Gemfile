@@ -60,5 +60,6 @@ end
     gem 'pry-rails'
     gem 'better_errors'
   end
+  gem 'omniauth'
 #### 1ulce add end #########
 
