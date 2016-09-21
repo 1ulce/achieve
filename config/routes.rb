@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
-  resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
+  resources :blogs, only: [:show, :index, :new, :create, :edit, :update, :destroy] do
     collection do
       post :confirm
     end
