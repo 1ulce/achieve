@@ -43,5 +43,8 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :letter_opener_web
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   BetterErrors::Middleware.allow_ip! "0.0.0.0/0" 
+  # falseだと、ローカルで404エラーとか見れる。trueだと見れない。普通はtrue。本番のみfalse
+  config.consider_all_requests_local = true
+  #
   ##### 1ulce add end ######
 end
