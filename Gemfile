@@ -51,6 +51,7 @@ end
   gem 'faker'
   group :development do
     gem 'letter_opener_web'
+    gem 'dotenv-rails'
   end
   gem 'therubyracer', platforms: :ruby
   gem 'rails_admin'
@@ -61,5 +62,7 @@ end
     gem 'better_errors'
   end
   gem 'omniauth'
+  gem 'omniauth-twitter'
+  gem 'omniauth-facebook'
 #### 1ulce add end #########
 

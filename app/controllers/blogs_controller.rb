@@ -32,7 +32,6 @@ class BlogsController < ApplicationController
   
   def update
     if @blog.update(blogs_params)
-      # 一覧画面へ遷移して"ブログを作成しました！"とメッセージを表示します。
       redirect_to blogs_path, notice: "ブログを編集しました！"
     else
       # 入力フォームを再描画します。
