@@ -7,13 +7,13 @@
       <div class="field">
         <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
       </div>
-      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-      <% end %>
       <div class="field">
         <%= f.text_field :name, class: "form-control", placeholder: "名前" %>
       </div>
       <% if @user.provider.blank? %>
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
         <div class="field">
           <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "#{@minimum_password_length}文字以上のパスワード" %>
         </div>
