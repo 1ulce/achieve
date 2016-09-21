@@ -53,5 +53,6 @@ end
     gem 'letter_opener_web'
   end
   gem 'therubyracer', platforms: :ruby
+  gem 'rails_admin'
 #### 1ulce add end #########
 
