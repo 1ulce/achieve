@@ -52,5 +52,6 @@ end
   group :development do
     gem 'letter_opener_web'
   end
+  gem 'therubyracer', platforms: :ruby
 #### 1ulce add end #########
 
