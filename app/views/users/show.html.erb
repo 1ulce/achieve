@@ -28,9 +28,15 @@
   <h4>フォロワー一覧</h4>
     <% @user.followers.each do |f_u| %>
       <div class="row">
-        <%= profile_img(f_u) %>
-        <%= f_u.name %>
-        <%= f_u.email %>
+        <div class= "col-md-4">
+          <%= profile_img(f_u) %>
+        </div>
+        <div class= "col-md-7">
+          <%= f_u.name %>
+        </div>
+        <div class= "col-md-7">
+          <%= f_u.email %>
+        </div>
         <%= render 'follow_form', user: f_u %>
       </div>
     <% end %>
