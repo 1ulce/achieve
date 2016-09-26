@@ -23,7 +23,7 @@ class SubmitRequestsController < ApplicationController
     respond_to do |format|
       if @submit_request.save
         @submit_request.task.update(status: 1)
-        format.html { redirect_to user_submit_requests_path(current_user.id,@submit_request), notice: '依頼を送信しました。' }
+        format.html { redirect_to submit_request_path(@submit_request), notice: '依頼を送信しました。' }
         format.json { render :show, status: :created, location: @submit_request }
       else
         format.html { render :new }
