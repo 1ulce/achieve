@@ -67,5 +67,6 @@ end
   gem 'carrierwave'
   gem 'rmagick'
   gem 'pusher'
+  gem 'fog'
 #### 1ulce add end #########
 
