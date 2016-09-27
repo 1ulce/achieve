@@ -51,7 +51,6 @@ end
   gem 'faker'
   group :development do
     gem 'letter_opener_web'
-    gem 'dotenv-rails'
   end
   gem 'therubyracer', platforms: :ruby
   gem 'rails_admin'
@@ -68,5 +67,7 @@ end
   gem 'rmagick'
   gem 'pusher'
   gem 'fog'
+  gem 'dotenv-rails'
+  gem 'unicorn'
 #### 1ulce add end #########
 
